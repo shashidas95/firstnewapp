@@ -71,7 +71,16 @@ Route::get('/country', function (){
 
 // request response//
 
-Route::post('/contact-us', [FirstController::class, 'store'])->name('contact-us');
+//Route::post('/contact-us', [FirstController::class, 'store'])->name('contact-us');
+
+//__form validation__//
+
+Route::post('/store/contact', [FirstController::class, 'store'])->name('store.contact');
+
+
+
+
+
 
 
 
